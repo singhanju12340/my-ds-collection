@@ -13,7 +13,7 @@
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:12)
+	at Application.main(Application.java:12)
 Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:210)
 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
@@ -38,7 +38,7 @@ Caused by: org.springframework.context.ApplicationContextException: Unable to st
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:15)
+	at Application.main(Application.java:15)
 Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142)
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
@@ -358,7 +358,7 @@ Correct the classpath of your application so that it contains a single, compatib
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:18)
+	at Application.main(Application.java:18)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.oembedler.moon.graphql.boot.GraphQLWebAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@73d16e93]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
 	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
@@ -414,7 +414,7 @@ Caused by: java.lang.ClassNotFoundException: graphql.execution.SimpleExecutionSt
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:348)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:18)
+	at Application.main(Application.java:18)
 Caused by: java.lang.NoClassDefFoundError: graphql/execution/SimpleExecutionStrategy
 	at java.lang.Class.getDeclaredMethods0(Native Method)
 	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
@@ -451,7 +451,7 @@ Caused by: java.lang.ClassNotFoundException: graphql.execution.SimpleExecutionSt
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:18)
+	at Application.main(Application.java:18)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.oembedler.moon.graphql.boot.GraphQLWebAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@73d16e93]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
 	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
@@ -507,7 +507,7 @@ Caused by: java.lang.ClassNotFoundException: graphql.execution.SimpleExecutionSt
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:348)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:18)
+	at Application.main(Application.java:18)
 Caused by: java.lang.NoClassDefFoundError: graphql/execution/SimpleExecutionStrategy
 	at java.lang.Class.getDeclaredMethods0(Native Method)
 	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
@@ -544,7 +544,7 @@ Caused by: java.lang.ClassNotFoundException: graphql.execution.SimpleExecutionSt
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:18)
+	at Application.main(Application.java:18)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.oembedler.moon.graphql.boot.GraphQLWebAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@73d16e93]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
 	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
@@ -600,7 +600,7 @@ Caused by: java.lang.ClassNotFoundException: graphql.execution.SimpleExecutionSt
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:348)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:18)
+	at Application.main(Application.java:18)
 Caused by: java.lang.NoClassDefFoundError: graphql/execution/SimpleExecutionStrategy
 	at java.lang.Class.getDeclaredMethods0(Native Method)
 	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
@@ -637,7 +637,7 @@ Caused by: java.lang.ClassNotFoundException: graphql.execution.SimpleExecutionSt
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:18)
+	at Application.main(Application.java:18)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.oembedler.moon.graphql.boot.GraphQLWebAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@73d16e93]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
 	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
@@ -693,7 +693,7 @@ Caused by: java.lang.ClassNotFoundException: graphql.execution.SimpleExecutionSt
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:348)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:18)
+	at Application.main(Application.java:18)
 Caused by: java.lang.NoClassDefFoundError: graphql/execution/SimpleExecutionStrategy
 	at java.lang.Class.getDeclaredMethods0(Native Method)
 	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
@@ -730,7 +730,7 @@ Caused by: java.lang.ClassNotFoundException: graphql.execution.SimpleExecutionSt
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:17)
+	at Application.main(Application.java:17)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.oembedler.moon.graphql.boot.GraphQLWebAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@73d16e93]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
 	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
@@ -786,7 +786,7 @@ Caused by: java.lang.ClassNotFoundException: graphql.execution.SimpleExecutionSt
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:348)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:17)
+	at Application.main(Application.java:17)
 Caused by: java.lang.NoClassDefFoundError: graphql/execution/SimpleExecutionStrategy
 	at java.lang.Class.getDeclaredMethods0(Native Method)
 	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
@@ -823,7 +823,7 @@ Caused by: java.lang.ClassNotFoundException: graphql.execution.SimpleExecutionSt
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:17)
+	at Application.main(Application.java:17)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.oembedler.moon.graphql.boot.GraphQLWebAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@73d16e93]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
 	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
@@ -879,7 +879,7 @@ Caused by: java.lang.ClassNotFoundException: graphql.execution.SimpleExecutionSt
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:348)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:17)
+	at Application.main(Application.java:17)
 Caused by: java.lang.NoClassDefFoundError: graphql/execution/SimpleExecutionStrategy
 	at java.lang.Class.getDeclaredMethods0(Native Method)
 	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
@@ -1121,7 +1121,7 @@ Correct the classpath of your application so that it contains a single, compatib
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:17)
+	at Application.main(Application.java:17)
 Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142)
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
@@ -1299,7 +1299,7 @@ Caused by: graphql.AssertException: queryType can't be null
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.tekion.aec.cp.imsjobs.controller.Application.main(Application.java:17)
+	at Application.main(Application.java:17)
 Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142)
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
