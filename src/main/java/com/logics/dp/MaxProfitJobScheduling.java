@@ -107,13 +107,13 @@ public class MaxProfitJobScheduling {
         int nextIndex = index+1;
 
         // not take profit
-        int noTakeProfit = 0 +  jobSchedulingRec(nextIndex, jobs);
+        int noTakeProfit = 0 +  jobSchedulingDp(nextIndex, jobs, dp);
 
         while(nextIndex< jobs.length && jobs[index].endTime > jobs[nextIndex].startTime){
             nextIndex++;
         }
         // take profit
-        int takeProfit =  jobs[index].profit + jobSchedulingRec(nextIndex, jobs);
+        int takeProfit =  jobs[index].profit + jobSchedulingDp(nextIndex, jobs, dp);
         dp[index] = Math.max(takeProfit,noTakeProfit);
         return dp[index] ;
     }
