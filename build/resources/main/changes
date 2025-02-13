@@ -1,0 +1,50 @@
+ms/service/transformer/v1/common/DealerPricingTransformer.java
+
+public void setBaseDealerFeaturePriceByCustomerType(PriceGroup priceGroup, Pricing.DealerPricing dealerPricing){
+           switch (priceGroup.getCustomerType()){
+               case Constants.Transformer.IncentiveCustomerType.GC:
+                   dealerPricing.setBasePrice(TCollectionUtils.filterAndTransformToList(priceGroup.getCashMathBox(), cashMathBox -> Constants.Transformer.DealerPricing.BASE_PRICE_TYPE.contains(cashMathBox.getType()), pricingTransformer));
+                   break;
+               case Constants.Transformer.IncentiveCustomerType.EMPLOYEE:
+                   dealerPricing.setBasePrice(TCollectionUtils.filterAndTransformToList(priceGroup.getCashMathBox(), cashMathBox -> Constants.Transformer.DealerPricing.EMPLOYEE_PRICE_TYPE.contains(cashMathBox.getType()), pricingTransformer));
+                   dealerPricing.getBasePrice().forEach(basePrice->basePrice.setType(BASE_DEALER_FEATURE_PRICE_TYPE));
+                   break;
+               case Constants.Transformer.IncentiveCustomerType.SUPPLIER:
+                   dealerPricing.setBasePrice(TCollectionUtils.filterAndTransformToList(priceGroup.getCashMathBox(), cashMathBox -> Constants.Transformer.DealerPricing.SUPPLIER_PRICE_TYPE.contains(cashMathBox.getType()), pricingTransformer));
+                   dealerPricing.getBasePrice().forEach(basePrice->basePrice.setType(BASE_DEALER_FEATURE_PRICE_TYPE));
+                   break;
+               default:
+                   throw new TValidationException("Invalid customer type "+ priceGroup.getCustomerType());
+           }
+    }
+}
+
+
+ src/main/java/com/tekion/aec/cp/ims/service/util/Constants.java
++
+6
+−
+0
+
+Viewed
+@@ -65,7 +65,11 @@ public class Constants {
+        }
+
+        public static class DealerPricing {
+            public static final String BASE_DEALER_FEATURE_PRICE_TYPE = "base_dealer_featured_price";
+            public static final List<String> BASE_PRICE_TYPE = Arrays.asList("dealer_price", "base_dealer_featured_price");
+            public static final List<String> EMPLOYEE_PRICE_TYPE = Arrays.asList("base_dealer_featured_price","employee_price");
+            public static final List<String> SUPPLIER_PRICE_TYPE = Arrays.asList("base_dealer_featured_price","supplier_price");
+
+
+
+                    public static class IncentiveCustomerType {
+                        public static final String GC = "GC";
+                        public static final String EMPLOYEE = "EMPLOYEE";
+                        public static final String SUPPLIER = "SUPPLIER";
+                    }
+
+
+
+
+
