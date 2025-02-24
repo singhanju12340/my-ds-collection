@@ -13,4 +13,6 @@ public class GetMinSquares {
      * Ex: N=6
      * 1*1 + 1*1 + 1*1 = 3
      */
+
+
 }
