@@ -25,6 +25,9 @@ public class MergeInterval {
      *
      * Input: intervals = [[1,4],[4,5]]
      * Output: [[1,5]]
+     *
+     * input {{1,3} , {4,8} ,{6,7}}
+     *
      * Explanation: Intervals [1,4] and [4,5] are considered overlapping.
      *
      */
@@ -108,6 +111,8 @@ public class MergeInterval {
         result.add(new int[]{start, end});
         return result.toArray(new int[0][]);
     }
+
+
 }
 
 

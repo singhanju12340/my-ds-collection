@@ -35,3 +35,5 @@ public class FindMinInSortedRotatedArray {
         System.out.println(new FindMinInSortedRotatedArray().findMin(nums5));
     }
 }
+
+
