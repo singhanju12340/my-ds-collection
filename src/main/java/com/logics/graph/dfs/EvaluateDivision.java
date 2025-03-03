@@ -132,13 +132,4 @@ public class EvaluateDivision {
         return graph;
     }
 
-
-    /***
-     * Q1: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
-     * Q2: https://leetcode.com/problems/number-of-1-bits/submissions/1522995017/
-     * Q3: https://leetcode.com/problems/binary-watch/
-     * Q4: https://leetcode.com/problems/generate-parentheses/description/
-     */
-
-
 }
