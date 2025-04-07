@@ -54,7 +54,6 @@ public class GenerateParenthesisCombination {
             generateParenthesisbacktrace(n, result, currentOpen, currentClose+1, builder);
             builder.deleteCharAt(builder.length()-1);
         }
-
     }
 
     public static void main(String[] args) {

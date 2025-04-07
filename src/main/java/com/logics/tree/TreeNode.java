@@ -8,6 +8,7 @@ public class TreeNode {
     public TreeNode left;
     public TreeNode right;
     Integer value;
+    Integer val;
 
     public TreeNode() {
 
@@ -17,7 +18,12 @@ public class TreeNode {
         this.left = left;
         this.right = right;
         this.value = value;
+        this.val = value;
+
     }
+
+
+
 
     public TreeNode getLeft() {
         return left;

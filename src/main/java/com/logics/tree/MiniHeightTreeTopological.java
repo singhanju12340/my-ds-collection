@@ -1,6 +1,7 @@
 package com.logics.tree;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author anju
@@ -41,7 +42,7 @@ public class MiniHeightTreeTopological {
             adjList.get(edge[0]).add(edge[1]);
             adjList.get(edge[1]).add(edge[0]);
 
-            // create indegree array
+            // create in-degree array
             inDegree[edge[0]]++;
             inDegree[edge[1]]++;
         }
@@ -54,7 +55,7 @@ public class MiniHeightTreeTopological {
                 leafQueue.add(i);
         }
 
-        // size check for 2 because root can be 1 or 2 based on the even and odd size of tree
+        // size check for 2 because root can be 1 or 2 based on the even and odd childs of tree
         while(leafQueue.size()>2){
             int leafNodeSize = leafQueue.size();
             while(leafNodeSize > 0){
@@ -80,7 +81,12 @@ public class MiniHeightTreeTopological {
     public static void main(String[] args) {
 //       int[][] input =  {{1,0},{1,2},{1,3}};
         int[][] input =  {{3,0},{3,1},{3,2},{3,4},{5,4}};
-
         findMinHeightTrees(6, input);
     }
+
+    class Employee{
+        public int id;
+    }
+
+  
 }
