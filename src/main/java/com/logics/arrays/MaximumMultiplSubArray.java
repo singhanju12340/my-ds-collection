@@ -41,7 +41,7 @@ public class MaximumMultiplSubArray {
  * */
 
 
-        // O(n^2) solution
+        // O(n^2) solution with finding all the subarray
     public static int subarrayWithMaxProduct(int []arr){
         // Write your code here.
         int max = Integer.MIN_VALUE;
@@ -50,12 +50,34 @@ public class MaximumMultiplSubArray {
             int prod = 1;
             for(int j = i; j<=i; j++){
                 prod = prod * arr[j];
+                max = Math.max(max, prod);
             }
-            max = Math.max(max, prod);
         }
         System.out.println(max);
         return max;
     }
+
+    // O(~ n^3), O(1 space) solution with finding all the subarray
+    public static int subarrayWithMaxProductn3(int []arr){
+        // Write your code here.
+        int max = Integer.MIN_VALUE;
+
+        for(int i=0;i<arr.length;i++){
+            for(int j=i;j<arr.length;j++){
+                int prod = 1;
+                for(int k = i; k<=j; k++){
+                    prod = prod * arr[k];
+                }
+                max = Math.max(max, prod);
+            }
+
+        }
+        System.out.println(max);
+        return max;
+    }
+
+
+
 
     // O(n) solution
     public static int subarrayWithMaxProduct2(int []arr){
@@ -66,8 +88,8 @@ public class MaximumMultiplSubArray {
         int pref = 1;
 
         for(int i=0;i<arr.length;i++){
-            if(suff == 0) suff = 1;
-            if(pref == 0) pref = 1;
+            if(suff == 0) suff = 1; // skip prev subarray which causes 0 inclusion
+            if(pref == 0) pref = 1; // skip previous subarray which causes 0 inclusion
             {
                 pref = pref * arr[i];
                 suff = suff * arr[arr.length-i-1];

@@ -50,7 +50,6 @@ public class Trie {
             int index = word.charAt(i)-'a';
             if(node.trie[index] == null){
                 Trie newT = new Trie();
-                newT.trie[index] = new Trie();
                 node.trie[index] = newT;
             }
             node = node.trie[index];

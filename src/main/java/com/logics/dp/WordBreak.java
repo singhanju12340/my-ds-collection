@@ -1,4 +1,4 @@
-package com.logics;
+package com.logics.dp;
 
 import java.util.Arrays;
 import java.util.HashSet;
