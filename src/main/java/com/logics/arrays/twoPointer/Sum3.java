@@ -1,4 +1,4 @@
-package com.logics;
+package com.logics.arrays.twoPointer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,6 +10,7 @@ import java.util.List;
  */
 public class Sum3 {
     public static void main(String[] args) {
+        //return all distinct tripltes
         int[] arr = new int[]{-1,0,1,2,-1,-4};
         threeSum(arr);
     }

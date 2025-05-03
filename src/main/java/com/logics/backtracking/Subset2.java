@@ -1,4 +1,4 @@
-package com.logics.dpSubsets;
+package com.logics.backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;

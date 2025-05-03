@@ -1,5 +1,10 @@
 package com.logics.graph;
 
+import org.apache.commons.collections.map.HashedMap;
+
+import java.util.Map;
+import java.util.Set;
+
 /**
  * @author anju
  * @created on 03/03/25 and 6:24 PM
@@ -41,6 +46,11 @@ public class NumberofProvinces {
     }
 
     public static void main(String[] args) {
+        Map<Integer, Set<Integer>> map = new HashedMap();
+
+
+
+
         int[][] input = new int[][]{
                 {1,1,0},
                 {1,1,0},
