@@ -1,0 +1,7 @@
+.idea/compiler.xml
+build/
+.idea/
+build
+build/*
+.gradle/*
+*.class

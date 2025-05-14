@@ -77,7 +77,7 @@ public class CountRectangleContainingPoint {
     }
 
     public static void main(String[] args) {
-        countRectangles(new int[][]{{1,2}, {2,3}, {2,5}}, new int[][]{{2,1}, {1,4}});
+        System.out.println( countRectangles(new int[][]{{1,2}, {2,3}, {2,5}}, new int[][]{{2,1}, {1,4}}));
 //        countRectangles(new int[][]{{1,1}, {2,2}, {3,3}}, new int[][]{{1,3}, {1,1}});
 
     }

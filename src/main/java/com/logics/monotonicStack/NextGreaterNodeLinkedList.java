@@ -4,19 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-/**
- * @author anju
- * @created on 27/12/24 and 2:47 PM
- */
-
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(){}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
-
 public class NextGreaterNodeLinkedList {
 
 
