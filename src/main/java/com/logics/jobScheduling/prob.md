@@ -1,10 +1,10 @@
-Meeting Rooms (LeetCode 252, 253)
+Meeting Rooms (LeetCode 252, 253) done
 
-Can one person attend all meetings?
+Can one person attend all meetings?252 done, 
 
-Minimum rooms needed for all meetings
+Minimum rooms needed for all meetings? 253 done
 
-CPU Task Scheduling (LeetCode 621)
+CPU Task Scheduling (LeetCode 621)?
 
 Schedule tasks with cooling period
 
