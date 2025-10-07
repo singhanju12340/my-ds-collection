@@ -9,6 +9,8 @@ import java.util.Arrays;
 public class PartitionArrayToSubset {
     public static void main(String[] args) {
         int[] arr = new int[]{1,2,3,4};
+        canPartition(arr);
+
         int sum = Arrays.stream(arr).sum();
         if(sum%2!=0) return;
         int target = sum/2;
@@ -64,4 +66,47 @@ public class PartitionArrayToSubset {
         }
         return dp[arr.length-1][target];
     }
+
+
+    public boolean canPartition(int[] nums) {
+        int sum = Arrays.stream(nums).sum();
+        if(sum%2!=0)
+            return false;
+        int[][] dp = new int[nums.length][sum/2+1];
+        for(int[] dp1: dp){
+            Arrays.fill(dp1, -1);
+        }
+
+        return canPartitionRec(nums, nums.length-1, sum/2, dp);
+    }
+
+
+    public boolean canPartitionRec(int[] nums, int index, int target, int[][] dp) {
+
+        if(target == 0) return true;
+
+        // if(index == 0 ) {
+        //     return (nums[0] == target) ;
+        // }
+
+
+        if (target < 0 || index < 0) {
+            return false;
+        }
+
+
+        if(dp[index][target] !=-1){
+            return (dp[index][target] == 0);
+        }
+
+        boolean take = canPartitionRec(nums, index-1, target-nums[index], dp);
+        boolean notake = canPartitionRec(nums, index-1, target, dp);
+
+
+        dp[index][target] =  take || notake ? 1 : 0 ;
+
+        return take || notake;
+    }
+
+
 }
